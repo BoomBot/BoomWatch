@@ -1,9 +1,6 @@
 /tokens.json
 /.idea
 /build
-/logs
-/addons
-/picpermconfig
 
 *.class
 

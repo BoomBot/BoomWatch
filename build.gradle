@@ -1,0 +1,31 @@
+repositories {
+    mavenCentral()
+    jcenter()
+    maven {
+        url = "https://dl.bintray.com/lomeli12/maven/"
+    }
+}
+
+apply plugin: 'java'
+
+group = groupID
+archivesBaseName = archiveName
+version = releaseVersion
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile "net.lomeli:BoomBot:${boomBotVersion}"
+    compile "com.google.code.gson:gson:${gsonVersion}"
+    compile "com.google.guava:guava:${guavaVersion}"
+    compile "commons-io:commons-io:${commonsIOVersion}"
+    compile "org.apache.commons:commons-lang3:${commonsLangVersion}"
+}
+
+build {
+    dependsOn clean
+    dependsOn jar
+    
+    jar.mustRunAfter clean
+}
