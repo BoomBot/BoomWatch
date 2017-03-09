@@ -1,0 +1,25 @@
+/tokens.json
+/.idea
+/build
+/logs
+/addons
+/picpermconfig
+
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.war
+/*.cfg
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+*.iml
+*.iws
+*.ipr
+.gradle/
+*.mp3
+*.log
