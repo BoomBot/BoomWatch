@@ -54,11 +54,11 @@ public class OWStatsCommand implements ICommand {
         EmbedBuilder builder = new EmbedBuilder();
         builder.setColor(new Color(0xFAA02E));
         builder.setAuthor(user, null, avatar);
-        builder.addField(lang.getLocalization("boomwatch.command.owstats.level"), "" + quickplay.getLevel(), true);
-        builder.addField(lang.getLocalization("boomwatch.command.owstats.quickplay.winrate"), "" + quickplay.getWinRate(), true);
+        builder.addField(lang.getLocalization("boomwatch.command.owstats.level"), quickplay.getLevel() + "", true);
+        builder.addField(lang.getLocalization("boomwatch.command.owstats.quickplay.winrate"), quickplay.getWinRate() + "%", true);
         if (competitive != null) {
             builder.addField(lang.getLocalization("boomwatch.command.owstats.competitive.rank"), "" + competitive.getCompetitiveRank(), true);
-            builder.addField(lang.getLocalization("boomwatch.command.owstats.competitive.winrate"), "" + competitive.getWinRate(), true);
+            builder.addField(lang.getLocalization("boomwatch.command.owstats.competitive.winrate"), competitive.getWinRate() + "%", true);
         }
         if (payload.getHeros() != null) addHeroProtraits(payload.getHeros(), builder);
 
