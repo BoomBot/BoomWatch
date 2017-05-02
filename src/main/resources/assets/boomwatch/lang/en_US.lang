@@ -1,0 +1,7 @@
+boomwatch.command.owstats.competitive.rank=Competitive Rank
+boomwatch.command.owstats.competitive.winrate=Competitive Win Rate
+boomwatch.command.owstats.level=Level
+boomwatch.command.owstats.quickplay.winrate=Quickplay Win Rate
+boomwatch.command.owstats.error.specify=Must give Blizzard name and id (Ex: UserName#00000, Case sensitive)
+boomwatch.command.owstats.error.onearg=Only use one arg.
+boomwatch.command.owstats.error.usernotfound=Could not find user %s!.
