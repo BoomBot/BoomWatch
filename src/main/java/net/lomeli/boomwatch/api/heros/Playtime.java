@@ -1,7 +1,5 @@
 package net.lomeli.boomwatch.api.heros;
 
-import com.google.common.collect.Maps;
-
 import java.util.*;
 
 public class Playtime {

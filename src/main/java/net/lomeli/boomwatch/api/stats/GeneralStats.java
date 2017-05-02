@@ -3,7 +3,8 @@ package net.lomeli.boomwatch.api.stats;
 public class GeneralStats {
     private ModeStats competitive, quickplay;
 
-    public GeneralStats(){}
+    public GeneralStats() {
+    }
 
     public ModeStats getCompetitive() {
         return competitive;

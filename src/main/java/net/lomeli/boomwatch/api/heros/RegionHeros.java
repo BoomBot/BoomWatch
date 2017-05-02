@@ -3,7 +3,7 @@ package net.lomeli.boomwatch.api.heros;
 public class RegionHeros {
     private Heroes heroes;
 
-    public RegionHeros(){
+    public RegionHeros() {
     }
 
     public Heroes getHeros() {
