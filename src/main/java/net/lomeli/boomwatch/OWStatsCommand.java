@@ -92,6 +92,7 @@ public class OWStatsCommand implements ICommand {
     }
 
     private String getHeroPortait(String heroname) {
+        if (heroname.equalsIgnoreCase("soldier76")) heroname = "soldier-76";
         return String.format("https://blzgdapipro-a.akamaihd.net/hero/%s/hero-select-portrait.png", heroname);
     }
 
