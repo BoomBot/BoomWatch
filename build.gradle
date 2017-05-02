@@ -21,6 +21,7 @@ dependencies {
     compile "com.google.guava:guava:${guavaVersion}"
     compile "commons-io:commons-io:${commonsIOVersion}"
     compile "org.apache.commons:commons-lang3:${commonsLangVersion}"
+    compile "net.dv8tion:JDA:${jdaVersion}"
 }
 
 build {
