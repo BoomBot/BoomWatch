@@ -15,6 +15,7 @@ import net.lomeli.boomwatch.BoomWatch;
 
 public class OWApiUtil {
     public static final Gson GSON = new Gson();
+    public static final HttpClient client = HttpClients.createMinimal();
 
     public static OWStatsPayload getPlayerInfo(String playerName, String playerID) {
         if (Strings.isNullOrEmpty(playerName) || Strings.isNullOrEmpty(playerID)) return null;
@@ -45,7 +46,6 @@ public class OWApiUtil {
     }
 
     public static HttpResponse GET(String url) throws IOException {
-        HttpClient client = HttpClients.createMinimal();
         HttpGet get = new HttpGet(url);
         return client.execute(get);
     }
