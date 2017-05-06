@@ -3,7 +3,6 @@ package net.lomeli.boomwatch;
 import com.google.common.base.Strings;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.entities.Guild;
-import net.dv8tion.jda.core.entities.MessageEmbed;
 import net.dv8tion.jda.core.entities.TextChannel;
 
 import java.awt.*;
@@ -62,10 +61,9 @@ public class OWStatsCommand implements ICommand {
         }
         if (payload.getHeros() != null) addHeroProtraits(payload.getHeros(), builder);
 
-        MessageEmbed msg = builder.build();
         Guild guild = BoomBot.jda.getGuildById(data.getGuildID());
         TextChannel channel = guild.getTextChannelById(data.getChannelID());
-        channel.sendMessage(msg).submit();
+        channel.sendMessage(builder.build()).submit();
     }
 
     private void addHeroProtraits(OWHerosPayload payload, EmbedBuilder builder) {
